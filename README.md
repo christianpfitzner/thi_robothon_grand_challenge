@@ -52,7 +52,7 @@ Installation of the packages for each hardware component is descriped on the lin
   ```
   <br/>
   
-  ### Point Cloud
+  #### Point Cloud
   
 <br/>
 
