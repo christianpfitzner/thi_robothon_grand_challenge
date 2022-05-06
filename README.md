@@ -42,9 +42,9 @@ Installation of the packages for each hardware component is descriped on the lin
   <br/>
   
   #### RGB
-  - `example_opencv_colorpicker` Example node to filter out a color section in an image
+  - `example_opencv_colormask` Example node to mask out a specific color section in an image
   ```
-  ros2 run thi_robothon_grand_challenge example_opencv_colorpicker_node --ros-args --params-file ~/ws_roboTHIx/src/thi_robothon_grand_challenge/config/params_vision.yaml 
+  ros2 run thi_robothon_grand_challenge example_opencv_colormask_node --ros-args --params-file ~/ws_roboTHIx/src/thi_robothon_grand_challenge/config/params_vision.yaml 
   ```
   - `example_opencv_contours` Example node to show contours in an image
   ```
