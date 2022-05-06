@@ -32,6 +32,10 @@ install( DIRECTORY
   DESTINATION share/${PROJECT_NAME}/
 )
 
+add_executable(example_opencv_colormask_node src/example_opencv_colormask.cpp)
+ament_target_dependencies(example_opencv_colormask_node ${dependencies})
+install(TARGETS example_opencv_colormask_node DESTINATION lib/${PROJECT_NAME})
+
 add_executable(example_opencv_contours_node src/example_opencv_contours.cpp)
 ament_target_dependencies(example_opencv_contours_node ${dependencies})
 install(TARGETS example_opencv_contours_node DESTINATION lib/${PROJECT_NAME})
