@@ -8,6 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(cv_bridge REQUIRED)
@@ -15,9 +16,20 @@ find_package(cv_bridge REQUIRED)
 set(dependencies
   ament_cmake
   rclcpp
+  std_msgs
   sensor_msgs
   OpenCV
   cv_bridge
+)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
+
+install( DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}/
 )
 
 add_executable(example_opencv_contours_node src/example_opencv_contours.cpp)

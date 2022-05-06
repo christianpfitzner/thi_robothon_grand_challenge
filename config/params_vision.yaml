@@ -1,0 +1,23 @@
+# --- E X A M P L E   N O D E S --- 
+example_opencv_contours_node:
+  ros__parameters:
+    # Topic to subscribe the camera image topic for a RGB image
+    sub_rgb_topic: "image"
+
+    # Topic to publish the processed image back to ROS
+    pub_rgb_topic: "image_processed"
+
+    # View all debug windows
+    view_debug_windows: false
+
+
+example_opencv_colorpicker_node:
+  ros__parameters:
+    # Topic to subscribe the camera image topic for a RGB image
+    sub_rgb_topic: "image"
+
+    # Topic to publish the processed image back to ROS
+    pub_rgb_topic: "image_processed"
+
+    # View all debug windows
+    view_debug_windows: false
