@@ -2,7 +2,7 @@
 example_contours:
   ros__parameters:
     # Topic to subscribe the camera image topic for a RGB image
-    sub_rgb_topic: "image_test"
+    sub_rgb_topic: "image"
 
     # Topic to publish the processed image back to ROS
     pub_rgb_topic: "image_processed"
