@@ -11,7 +11,7 @@ example_contours:
     view_debug_windows: false
 
 
-example_colorpicker:
+example_colormask:
   ros__parameters:
     # Topic to subscribe the camera image topic for a RGB image
     sub_rgb_topic: "image"
@@ -20,4 +20,7 @@ example_colorpicker:
     pub_rgb_topic: "image_processed"
 
     # View all debug windows
-    view_debug_windows: false
+    view_debug_windows: true
+
+    # View all filter for the first mask
+    view_debug_filter_1: true
